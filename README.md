@@ -1,4 +1,4 @@
-# Number Guessing Game Website
+# Number Game
 
 A beginner-friendly number guessing game built using HTML, CSS, and JavaScript.
 
@@ -16,4 +16,5 @@ A beginner-friendly number guessing game built using HTML, CSS, and JavaScript.
 ## Technologies Used
 - HTML
 - CSS
+
 - JavaScript
