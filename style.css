@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #f7f7f7, #6bcef2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6bcef2;
+}
+
+/* Game Card */
+.container {
+    width: 600px;
+    padding: 50px;
+    background: linear-gradient(145deg, #0f3460, #16213e);
+    border-radius: 15px;
+    box-shadow: 0 0 25px #6bcef2(48, 245, 245, 0.25);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 10px;
+    color: #00f5ff;
+    text-shadow: 0 0 10px #00f5ff;
+}
+
+/* Text */
+p, label {
+    font-size: 14px;
+    color: #6bcef2;
+}
+
+/* Dropdown */
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background: #0f0f1a;
+    color: #6bcef2;
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: #000000;
+    color: #6bcef2;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    width: 48%;
+    padding: 10px;
+    margin: 5px 1%;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Guess Button */
+button:first-of-type {
+    background: #00f5ff;
+    color: #000;
+}
+
+button:first-of-type:hover {
+    box-shadow: 0 0 15px #00f5ff;
+}
+
+/* Restart Button */
+button:last-of-type {
+    background: #ff4c4c;
+    color: #000;
+}
+
+button:last-of-type:hover {
+    box-shadow: 0 0 15px #ff4c4c;
+}
+
+/* Message */
+#message {
+    margin-top: 15px;
+    font-size: 15px;
+    min-height: 20px;
+}
+
+/* Animations */
+.win {
+    color: #00ff9c;
+    text-shadow: 0 0 10px #00ff9c;
+}
+
+.lose {
+    color: #ff4c4c;
+    text-shadow: 0 0 10px #ff4c4c;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
